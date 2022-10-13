@@ -22,13 +22,13 @@ Gui, Add, Picture, gGuiClose x%UltimoButtonX% ym w40 h40 , %A_ScriptDir%\Close.p
 
 Gui, Font, S25, Verdana
 Gui, Font, cffffff
-Gui, Add, Text, x%TextWidth% ym, UnionKanboard
+Gui, Add, Text, x%TextWidth% ym, TuaTia
 
 
 Gui, +ToolWindow -Caption +Border
 Gui, Color, 333333
 Gui Show
-WB.Navigate("https://t.showdeimagem.com.br")
+WB.Navigate("https://Google.com.br")
 return
 
 Voltar:

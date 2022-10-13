@@ -13,22 +13,22 @@ TextWidth := A_ScreenWidth * 0.41
 Gui Add, ActiveX, x0 y52 w%A_ScreenWidth% h%A_ScreenHeight% vWB, Shell.Explorer
 
 
-Gui, Add, Picture, gVoltar x%PrimeiroButtonX% ym w40 h40 , C:\Users\Show de Imagem\Documents\Ahk Kanbam\Voltar.png
+Gui, Add, Picture, gVoltar x%PrimeiroButtonX% ym w40 h40 , %A_ScriptDir%\Voltar.png
 Gui, Add, Picture, gIr x+10 ym w40 h40 , %A_ScriptDir%\Avançar.png
-Gui, Add, Picture, gAtualizar x+40 ym w40 h40 , C:\Users\Show de Imagem\Documents\Ahk Kanbam\Refresh.png
-Gui, Add, Picture, gMinimizar x%MinimizeButtonX% ym w40 h40 , C:\Users\Show de Imagem\Documents\Ahk Kanbam\Minimize.png
-Gui, Add, Picture, gGuiClose x%UltimoButtonX% ym w40 h40 , C:\Users\Show de Imagem\Documents\Ahk Kanbam\Close.png
+Gui, Add, Picture, gAtualizar x+40 ym w40 h40 , %A_ScriptDir%\Refresh.png
+Gui, Add, Picture, gMinimizar x%MinimizeButtonX% ym w40 h40 , %A_ScriptDir%\Minimize.png
+Gui, Add, Picture, gGuiClose x%UltimoButtonX% ym w40 h40 , %A_ScriptDir%\Close.png
 
 
 Gui, Font, S25, Verdana
 Gui, Font, cffffff
-Gui, Add, Text, x%TextWidth% ym, UnionKanboard
+Gui, Add, Text, x%TextWidth% ym, TuaTia
 
 
 Gui, +ToolWindow -Caption +Border
 Gui, Color, 333333
 Gui Show
-WB.Navigate("https://t.showdeimagem.com.br")
+WB.Navigate("https://TuaTia.com.br")
 return
 
 Voltar:
